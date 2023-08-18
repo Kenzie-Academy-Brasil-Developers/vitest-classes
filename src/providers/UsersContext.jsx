@@ -4,8 +4,8 @@ export const UsersContext = createContext({});
 
 export const UserProvider = ({children}) => {
     return(
-        <UsersContext.Provider value={{ userList: []}}>
-
+        <UsersContext.Provider value={{ userList: [] }}>
+            {children}
         </UsersContext.Provider>
     )
 }
