@@ -2,8 +2,7 @@ import { useContext } from "react"
 import { UserCard } from "../UserCard"
 import { UsersContext } from "../../providers/UsersContext"
 
-export const UserList = () => {
-    const { userList } = useContext(UsersContext);
+export const UserList = ({userList}) => {
     return(
         <ul>
             {userList.map(user => (
