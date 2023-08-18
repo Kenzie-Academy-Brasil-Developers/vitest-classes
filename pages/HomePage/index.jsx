@@ -1,7 +1,8 @@
 export const HomePage = () => {
    return (
-      <UserProvider>
+      <main>
+         <h1>Home</h1>
          <UserList />
-      </UserProvider>
+      </main>
    );
 };
