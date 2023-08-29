@@ -4,6 +4,7 @@ import { UsersContext } from "../../providers/UsersContext"
 
 export const UserList = () => {
     const { userList } = useContext(UsersContext);
+
     return(
         <ul>
             {userList.map(user => (
