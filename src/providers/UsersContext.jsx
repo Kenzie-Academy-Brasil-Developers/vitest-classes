@@ -10,8 +10,13 @@ export const UserProvider = ({children}) => {
         setUserList([...userList, newUser]);
     }
 
+    const removeUser = (userId) => {
+        const newUserList = userList.filter(user => user.id !== userId);
+        setUserList(newUserList);
+    }
+
     return(
-        <UsersContext.Provider value={{ userList, createUser }}>
+        <UsersContext.Provider value={{ userList, createUser, removeUser }}>
             {children}
         </UsersContext.Provider>
     )

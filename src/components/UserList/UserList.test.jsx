@@ -9,6 +9,8 @@ const userListMock = [
 ];
 
 describe("UserList", () => {
+ 
+
    test("should render correctly with all the itens", () => {
       render(
          <UsersContext.Provider value={{ userList: userListMock }}>
